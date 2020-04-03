@@ -1,0 +1,125 @@
+.header{
+    background: black; /*changes the background to back*/
+    border: 4px double rebeccapurple; /*creates a double line border that is one pixel wide and in rebecca purple*/
+}
+
+body{
+    text-align: center; /*aligns all text into the center of the page*/
+    padding-top: 0px; /*creates 0 padding at the top */
+    background: dodgerblue; /*sets the body background to dodgerblue */
+    color: rebeccapurple; /*changes the font color to rebeccapurple */
+    font-size: large;
+
+
+}
+
+.text
+{
+    background: dodgerblue; /*sets the background to dodgerblue */
+    width: 400px; /*sets the width to 400 pixels*/
+    color: rebeccapurple; /*sets the text color to black*/
+    padding-left: 700px; /*sets the left padding to 700 pixels*/
+}
+
+li a {
+    display: block; /*sets the li to a block*/
+    color: rebeccapurple; /*changes the text to black */
+    padding: 8px 16px; /*sets the padding to 8 pixels and 16 pixels*/
+    text-decoration: none; /*sets text decoration to none */
+}
+
+li{
+    text-align: center; /*aligns the text to the center */
+    border-bottom: 1px solid rebeccapurple; /*creates a border at the bottom that's 1 pixel solid in rebeeca purple*/
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 10%;
+    background-color: dodgerblue;
+    height: 100%;
+    position: fixed;
+    overflow: auto;
+    border: 4px double rebeccapurple;
+}
+
+h1, h2{
+    padding-left: 150px;
+    padding-top: 0px;
+    font-size: large;
+    color: rebeccapurple;
+    font-family: "Franklin Gothic Medium";
+}
+
+h3{
+    padding-left: 150px;
+    padding-top: 0px;
+    font-size: medium;
+    color: rebeccapurple;
+    font-family: "Franklin Gothic Medium";
+}
+
+h4{
+    padding-left: 0px;
+    padding-top: 0px;
+    font-size: medium;
+    color: dodgerblue;
+    font-family: "Franklin Gothic Medium";
+}
+.char{
+    background-color: rebeccapurple;
+    color: dodgerblue;
+    padding-top: 0px;
+    padding-left: 150px;
+    font-size: small; /*sets font to a small size*/
+    font-family: "Franklin Gothic Medium"; /*sets the font family to Franklin Gothic Medium*/
+}
+
+.doc{
+    background-color: rebeccapurple;
+    color: dodgerblue;
+    padding-top: 0px;
+    padding-left: 150px;
+    font-size: small; /*sets font to a small size*/
+    font-family: "Franklin Gothic Medium"; /*sets the font family to Franklin Gothic Medium*/
+    height: 300px;
+    overflow: auto;
+}
+
+.active {
+    background-color: rebeccapurple;
+text-align: center;
+    color: dodgerblue;
+}
+
+a.info{
+    position:relative; /*this is the key*/
+    z-index:24;
+    background: transparent;
+    color:#000;
+    text-decoration:none;
+    padding: 40px;
+
+
+}
+
+a.info:hover{z-index:25; background-color:transparent; align-content: center;}
+
+a.info span{display: none}
+
+a.info:hover span { /*the span will display just on :hover state*/
+    display: block;
+    position: absolute;
+    top: 2em;
+    left: 2em;
+    width: 15em;
+    background-color: dodgerblue;
+    text-align: center;
+    border: 1px double white;
+    color: black;
+    width: 300px;
+    overflow: auto;
+}
+
