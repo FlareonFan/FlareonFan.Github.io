@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game Document</title>
+    <!--links to the css code for this page's layout, etc -->
+    <link rel="stylesheet" type="text/css" href="Main.css">
+    <!--creates the header class-->
+    <div class="header">
+        <!--photo link with set height and width -->
+        <img src="photos/Web_Game_Logo.png" width="300" height="200">
+    </div>
+</head>
+<body>
+<ul>
+    <!-- creates a link within the nagivation and sets the main link as active-->
+    <li><a href="Main.html">Main Page</a></li>
+    <li><a href="Game.html">Sleepless Nights Game</a></li>
+    <li style="float:center"><a class="active" href="Document.html">Design Document</a></li>
+    <li><a href="Team.html">Meet the Team</a></li>
+    <li><a href="Credits.html">Credits</a></li>
+
+</ul><p><p><div class="doc">
+To access the full version of the design document: <a href="https://drive.google.com/file/d/17wKQl_ZmNQ0wkt20HbhpEgqArsB2MPRH/view?usp=sharing">please click here</a>
+<br>This version has been modified.<p>
+   <h4> Web Games 2<br>
+    Game Design Document<br>
+    ‘Sleepless Nights’<p></h4>
+
+    Leon Irving B00301496<br>
+    Kenneth Yorke B00302185<br>
+    Kirstin Jackson B00328251<p>
+    <b>Contents</b><br>
+    Game Design	............................. 1<br>
+    Game Overview .............................	1<br>
+    Inspiration ............................. 2<br>
+    Controls ............................. 3<br>
+    Gameplay ............................. 3<br>
+    Players	............................. 3<br>
+    Enemies	............................. 4<br>
+    Art and Visual Design .............................	5<br>
+    User Interface ............................. 6<br>
+    Level Design ............................. 6<br>
+    Technical Design .............................	7<br>
+    Creation of Character Sprite Sheets ............................. 7<br>
+    Creation of Voices ............................. 8<br>
+    Project Management ............................. 9<br>
+    Appendix ............................. 10<br>
+    References ............................. 11<br>
+    Initial Brainstorming Ideas ............................. 13<br>
+    Game Demo ............................. 13<br>
+    Changes from the Original Design ............................. 13<br>
+    Removed or Undeveloped Features ............................. 13<br>
+    New Features and Improvements ............................. 13<p>
+   <b> Game Design<p>
+       Game Overview</b><br>
+
+    Sleepless Nights is a 2D top-down survival shooter game which involves a group of young children who team up together to defeat the monsters that appear throughout the night.
+    There are three playable characters: Tom, Zoey and Harry. Each character has a unique active and passive ability that can help the player survive the horde of monsters.
+    The game will be developed for both Windows and Mac web browsers. The player has the option to play alone or team up with a friend using local multiplayer.
+    The game’s targeted audience will be children since the game will feature an appropriate theme with friendly toon-styled art, no violence or gory effects and a low level of difficulty.
+<p><b> Inspiration</b><br>
+    The game draws much inspiration from similar top-down survival shooter style games such as “The Binding of Isaac”, “Don’t Starve Together” and “Zombies Ate My Neighbors.” These games all feature characters and environments drawn in a stylised cartoon style which lead to the team choosing this style for “Sleepless Nights.”
+    These games also influenced how the levels will be designed with features such as room layouts, connections between separate areas and spawning locations of both enemies and characters.
+    The control scheme of this game has been influenced by The Binding of Isaac; which utilises simple directional controls for moving and shooting, with dedicated keys for activating abilities or using items.
+    Don’t Starve Together provided inspiration for co-op elements, as this multiplayer survival game exhibits a variety of interaction between player actions and abilities. The game served as a useful example of co-op player versus environment combat and mechanics.
+
+
+    The visual style was influenced by other top down games, e.g. The Legend of Zelda and Pokemon<p>
+    <b>Controls</b><br>
+    The option of up to two players can play using the local co-op option. Player 1 and 2 will use the keyboard. Player 1 will use the standard keyboard keys of W, A, S, D to move and the spacebar to shoot in the direction they are facing and pressing the X key will activate their special ability. Player 2 will use the arrows keys to move, NumPad 0 to shoot and NumPad 1 to use their special ability.
+
+
+<p><b> Gameplay</b><br>
+    For the player(s) to win the game, they must survive each level and defeat the final boss at the end. Hostile characters will be encountered throughout the level and wi
+    player(s) progress. The player(s) can fight these enemies using different attacks or abilities depending on the character they have chosen to play.
+
+<p><b>Players</b><br>
+    Players can choose from three different characters each with their unique special moves and traits.<br>
+
+
+    Zoey is a smart and capable young girl and one of the three starting characters. She is recommended for beginners as she is the most balanced of the four characters. Zoey uses a water pistol weapon to inflict damage to enemies from a distance. She can also use her paddle ball at close range to deal damage to enemies. She is the leader of the team and helps to keep them motivated and focused on the task at hand. Her special move inspires the team with a motivational speech, restoring health and shielding the team from damage for a short period of time.
+<br>
+    Harry is a boy genius and a master of technology. He builds weapons and gadgetry from common household items to help defeat the monsters. His special move overloads the team’s weaponry doubling the fire rate for a short amount of time. His passive move allows him to upgrade his weapon to a stronger version after defeating a certain number of enemies. Harry’s weapon can be upgraded up to three times and will be reset to the default weapon if he is knocked out.
+<br>
+    Tom is the tough guy of the group. He uses his trusty baseball bat to fend off the attacking monsters. For every 50 damage Tom takes, he will receive five percent damage reduction up to a maximum of 50 percent. This resets if Tom is knocked out. Tom’s special move is called ‘Sugar Rush’. When activated, Tom will give the team some candy, and they will move much faster for a temporary amount of time.
+<p>
+
+    <b> Enemies</b><br>
+    The player(s) will fight a variety of enemy characters, which appear throughout the level in increasing numbers and difficulty.
+    <br>
+    The first enemy type that the player encounters is a basic melee enemy. This enemy appears in greater numbers than others and moves toward the player and attacks dealing damage when in short range of the player. It deals a small amount of damage and has a small pool of health points.
+    <br>
+    The ranged type of enemy moves toward the player until within a certain radius which will start the enemy shooting at the player. This type of enemy will have a longer attacking range and higher damage output with an average amount of health points.
+   <br>
+    The spawner type of enemy is slower but offers more of a challenge, dealing an average amount of damage. It has the ability to spawn a number of smaller melee enemies near its location which also attack the player.
+   <br>
+    Upon being destroyed, each of these enemies have the probability of two in three chance of dropping supplies - these supplies consist of either a health or ammo pickup. For the player to pick up these supplies, they must collide with the pickup which will then replenish either the player’s health or ammo by a set percentage.
+   <p>
+    <b>Art and Visual Design</b><br>
+    The overall character designs are to make the characters look cute and friendly with a cartoony style similar to the Japanese style known as chibis. Each character has their own child-like weapon which consist of water pistols, slingshots and baseball bats which can be used to fight back against the monsters over weapons such as rifles or grenades seen within other similar style games. The sprites are drawn to reflect and visually separate each character and to communicate their character’s abilities to the player.
+
+
+    The enemies will appear as various children’s toys, which will be designed to depict a more darker appearance than their normal counterparts would. Their designs reflect their attacking styles or other attributes, to allow further visual communication to the player(s).
+<p>
+    <b> User Interface</b><br>
+    The user interface of the game includes the main menu, in-game information panels, an options menu and the credits screen. During gameplay, the status of each player is displayed; this includes a portrait of the character, health and ammo levels. The main menu provides many options such as starting the game alone or in multiplayer, configuring settings and viewing the game’s credits.
+<p>
+    <b>Sketches and designs of the level layout</b><br>
+    The level will use a linear topology and the objective will be to reach and defeat the final boss (located at point B). The player(s) will start at point A. The level is designed to represent a large house, with assets and obstacles being in the forms of furniture typically found within a modern house.
+    Starting in the bedroom section, the player(s) will progress through the corridor with options to visit the other bedrooms on either side of the corridor with basic enemies to face. Next, they will navigate down a flight of stairs to a hallway with slightly tougher enemies and obstacles. The player(s) then navigate into the living room which will be a larger fighting area featuring multiple enemies and larger obstacles.
+    The bathroom will be an area where the players can replenish both their health and supplies before moving into the kitchen where a choice of routes comes available and tougher enemies. Finally, the players will move outside into the garden, in which they will face the final boss who will be more difficult than the other enemies and upon defeating the boss, the player(s) have won the game.
+<p>
+    <b>Technical Design</b><br>
+    The web game is designed using the Phaser 3 game library and written in JavaScript. It is hosted using a website created with HTML, CSS and JavaScript, which allows the game to be played embedded within a website whilst also providing information about the game and its development.
+<p>
+    <b> Creation of Character Sprite Sheets</b><br>
+    The characters were created using 3D models found on the Unity Asset Store. To get the ideal look, the textures were edited in Adobe Photoshop CC. The materials also were changed from the Standard Unity Material to the Unlit Texture Material. This was done so that the character would not be affected by shadows and lighting.
+    A cube with an unlit green texture was created and placed in the scene and this will be used to remove the background.
+    The characters were then rigged using Mixamo and placed in front of the cube. The animations were set to play on the animator and then an orthographic camera was created which focuses on the player.
+    Then screen recording software was used to record the player playing the animation. This video was opened using Adobe Photoshop and split into separate layers. Unnecessary frames were deleted leaving only the key frames of the animation.
+<br>
+    The level is initially generated using Tiled. This uses a set of environment sprites to allow the placement of tiles to create the level according to the design sketches and layouts. This tile set can then be exported to either a .csv or JSON file types to allow the data to be used in Phaser. Phaser can then create a level layout using this data to position tiles from a sprite sheet. The red transparent cube is used for collisions in a separate collision layer.
+<p>
+
+    <b>Creation of Voices</b><br>
+    Prototype voice lines used for Harry, Tom and Zoey were created using Microsoft Word text to speech conversion. Eventually both Tom and Zoey’s voices were done by recording via a microphone and software such as Audacity before importing the files into mp3s and adding them into the game.
+<p>
+    <b>Project Management</b><br>
+    Considering skills and previous experience, each team member was given a number of roles and tasks to ensure the full efficiency of the team could be reached;
+<br>
+    Leon Irving: Documentation, Level Design, Enemy Character Design, Enemy Character Implementation
+<br>
+    Kenneth Yorke: Documentation, Player Character Implementation, Player Character Design, Concept Art Development, Tom’s Voice Actor
+<br>
+    Kirstin Jackson: Documentation, Character Art Design, Story Design, Zoey’s Voice Actress
+<br>
+    To achieve version control and cloud storage of project data, GitHub was used. This allows a repository of all game and website files to be saved and accessible online to all team members. Google Drive was utilised to allow multi user access and editing of documents and non-game files.
+    The agile development methodology was employed for this project. This allows for more flexible production, as this utilises more frequent iteration of design and development procedures. As such the project design and prototypes were developed in tandem, with frequent meetings of team members throughout to establish timelines and specifications for project milestones.
+    This required all team members to communicate effectively and efficiently throughout. As such Discord was used to allow voice chat, text messaging and screen sharing for the purposes of development meetings and implementation sessions.
+
+<p>
+
+    <b>Appendix</b><br>
+See original game design document.
+    <p>
+
+    <b>References</b><br>
+    Alface, C., 2016. Monster Balls Pack. [image] Available at: <https://opengameart.org/content/monster-balls-pack> [Accessed 4 April 2020].
+<br>
+    Easy way, 2017. Creat POPUP Box by CSS, HTML. [video] Available at: <https://www.youtube.com/watch?v=Ns-isBKwk78> [Accessed 11 March 2020].
+<br>
+    Eichberg, L., 2016. Healthbar programming HTML5. [video] Available at: <https://www.youtube.com/watch?v=fIXJrC4Yb8s> [Accessed 19 March 2020].
+<br>
+    Epic Minds, 2017. Midora. [image] Available at: <https://www.kickstarter.com/projects/epicmindsinc/midora-0> [Accessed 12 February 2020].
+<br>
+    D. N., 2014. The Binding of Isaac – Pure Addiction. [image] Available at: <https://mistranslationsforthemoderngamer.wordpress.com/2014/11/08/the-binding-of-isaac-pure-addiction/> [Accessed 12 February 2020].
+<br>
+    Dcode. 2018. Create your own Progress Bar in HTML, CSS & JavaScript | Web Development Tutorial. [video] Available at: <https://www.youtube.com/watch?v=QxQRtwAtqKE > [Accessed 19 March 2020].
+<br>
+    French, J., 2019.  Ultimate Game Music Collection. [online] Available at: <https://assetstore.unity.com/packages/audio/music/orchestral/ultimate-game-music-collection-37351> [Accessed 15 January 2020].
+    <br>
+    Himsl, F. and McMillen, E.,  2011. The Binding of Isaac [Windows PC]. Available at: <https://store.steampowered.com/app/113200/The_Binding_of_Isaac/> [Accessed 15 January 2020]
+    <br>
+    Imphenzia,  2017. Universal Sound FX. [online] Available at: <https://assetstore.unity.com/packages/audio/sound-fx/universal-sound-fx-17256> [Accessed 15 January 2020].
+    <br>
+    Indie Retro News, 2017. Brutal Zombies Ate My Neighbors - A brilliant SNES classic has just got much much harder. [image] Available at: <http://www.indieretronews.com/2017/06/brutal-zombies-ate-my-neighbors.html> [Accessed 12 February 2020].
+    <br>
+
+    McFerran, D., 2015. Zelda-Style Adventure Midora Runs Out Of Kickstarter Cash, Future Of Wii U And 3DS Versions Uncertain. [image] Available at: <http://www.nintendolife.com/news/2015/04/zelda-style_adventure_midora_runs_out_of_kickstarter_cash_future_of_wii_u_and_3ds_versions_uncertain> [Accessed 12 February 2020].
+    <br>
+    NintendoLife, 2017. The Binding of Isaac - Afterbirth. [image] Available at: <https://www.nintendolife.com/games/nintendo-switch/binding_of_isaac_afterbirthplus> [Accessed 12 February 2020].
+    <br>
+    photonstorm.com, P., 2020. Phaser - Examples - Topdown Target Focus. [online] Phaser.io. Available at: <https://phaser.io/examples/v3/view/games/topdownshooter/topdowntargetfocus> [Accessed 15 January 2020].
+    <br>
+    photonstorm.com, P., 2020. Phaser - Examples - Topdown Combat Mechanics. [online] Phaser.io. Available at: <https://phaser.io/examples/v3/view/games/topdownshooter/topdowncombatmechanics> [Accessed 15 January 2020].
+    <br>
+    Steam, n.d. Don’t Starve Together. [image] Available at: <https://store.steampowered.com/app/322330/Dont_Starve_Together/> [Accessed 12 February 2020].
+    <br>
+    Thompson, Daniel, 2019. [Online] Available at: <https://www.nintendoenthusiast.com/five-nights-at-freddys-4-is-releasing-on-the-nintendo-switch-this-month/> [Accessed 5 February 2020].
+    <br>
+    TurkCheeps, 2016. Cute Female 2. [image] Available at: <https://assetstore.unity.com/packages/3d/characters/cute-female-2-14144> [Accessed 15 January 2020].
+    <br>
+    TurkCheeps, 2016. Cute Male 3. [image] Available at: <https://assetstore.unity.com/packages/3d/characters/cute-male-3-18090?aid=1100lJ2z&cid=1011l7Agp9tI&utm_source=aff> [Accessed 15 January 2020].
+    <br>
+    WClarkson, 2017. How to make a status bar in Phaser. [video] Available at: <https://www.youtube.com/watch?v=dJwjv5LfJPs&t=148s> [Accessed 19 February 2020].
+    <br>
+    w3schools, n.d. Css text-indent Property. [online] Available at: <https://www.w3schools.com/cssref/pr_text_text-indent.asp> [Accessed 11 March 2020].
+    <br>
+    w3schools, n.d. CSS Layout - the display layout. [online] Available at: <https://www.w3schools.com/css/css_display_visibility.asp> [Accessed 11 March 2020].
+    <br>
+    Zuno, L., 2019. Part 1 Setting Up - Getting Started With Phaser 3. [video] Available at: <https://www.youtube.com/watch?v=frRWKxB9Hm0&list=PLDyH9Tk5ZdFzEu_izyqgPFtHJJXkc79no> [Accessed 15 January 2020].
+<p>
+
+
+    <b>Initial Brainstorming Ideas</b><br>
+    Super Smash Brothers inspired 2D fighting game (competitive pvp)<br>
+    2D Platformer (Fireboy and Watergirl)<br>
+    2D Zombie Survival game (co-op vs ai); Location - Scared Kid - bedroom - dark - monsters coming to life - survival shooter<p>
+    <b> Game Demo</b><br>
+    This video demo showcases the project and describes its gameplay and features:<br>
+    https://youtu.be/NUWSGjkbUfY
+<p>
+    <b>Version Control</b><br>
+    The GitHub repository for this project can be accessed here to view game files, developer contributions and production history:
+    https://github.com/CrazyCanineStudios/Web_Games_Development_2
+<p>
+    <b>Changes from the Original Design</b><br>
+    As development progressed, certain features were either changed from the original design or removed, and several new features were implemented.
+   <p></p> <b>Removed or Undeveloped Features</b><br>
+    The fourth character was removed; Rosalyn who unlike the other three kids in the story - would be a spoiled brat that wants everything and no one else can have more than what she has. This would mean Rosalyn would be granted more health and ammo perks from all health packs she picks up. She also would have a special move called “Temper Tantrum” which would deal 100 damage to all enemies within a certain range as well as hurting any allies within a certain radius meaning caution should be used to make sure that Rosalyn doesn’t take out other players while using the move.
+    Originally the characters had special abilities which would interact with enemies and other players, such as area of effect attacks, healing and ammo replenishing. This feature was not implemented in favour of dedicating development time to improving the base combat and further integrating these features into core gameplay.
+    Most enemy types were able to be added, however to increase simplicity the spawner enemy type was left out, with focus rerouted to developing the final boss and other win conditions.
+   <p>
+    <b>New Features and Improvements</b><br>
+    A new lives system was implemented, in which both players share a pool of 3 lives. When either player dies, a life is taken away and they are both respawned at a checkpoint with full health. If all lives are depleted they are returned to the main menu. This feature encourages team play and co-operation to keep one another alive,  emphasising one of the core concepts of this game.
+    The story of the game was further developed from the original design. This gave the player characters and enemies context within the game world, as well as relating to the win/loss conditions.
+    The user interface was extended further from the design. This included the development of a main menu, how to play screens, credits, win/loss screens and pause menus. These improvements allow more intuitive navigation throughout the game for the player. The heads-up display was also increased in functionality to show health, ammo and lives.
+    To allow players to continue to fight throughout the level, enemies were given a chance to drop ammo or health pickups. These replenish a player’s supplies on contact and act as a method to ensure the players are not left without a way to fight back against the enemies as they progress.
+
+
+
+    </div>
+
+
+
+</body>
+</html>
